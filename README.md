@@ -1,4 +1,5 @@
 # Spring Boot 3.2.3 Security with JWT Implementation
+
 This project demonstrates the implementation of security using Spring Boot 3.2.3 and JSON Web Tokens (JWT). It includes the following features:
 
 ## Features
@@ -21,16 +22,13 @@ This project demonstrates the implementation of security using Spring Boot 3.2.3
 ## Getting Started
 To get started with this project, you will need to have the following installed on your local machine:
 
-* JDK 17+
-* Maven 3+
+* Docker
+* Docker Compose
 
+To run the project with Docker, follow these steps:
 
-To build and run the project, follow these steps:
+1. Clone the repository: `git clone https://github.com/hmmrfll/rest.git`
+2. Navigate to the project directory: `cd rest`
+3. Run the application with Docker Compose: `docker-compose up --build`
 
-* Clone the repository: `gh repo clone hmmrfll/rest`
-* Navigate to the project directory: cd spring-boot-security-jwt
-* Add database "jwt_security" to postgres 
-* Build the project: mvn clean install
-* Run the project: mvn spring-boot:run 
-
--> The application will be available at http://localhost:8081.
+The application will be available at http://localhost:8081.
