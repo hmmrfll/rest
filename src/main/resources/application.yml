@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/database_name_5
+    username: hmmrfll
+    password: 12345678
+  jpa:
+    hibernate:
+      ddl-auto: update

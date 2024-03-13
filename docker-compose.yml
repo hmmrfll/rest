@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  psql-db:
+    image: postgres
+    container_name: psql-db
+    restart: always
+    environment:
+      - POSTGRES_USER=hmmrfll
+      - POSTGRES_PASSWORD=12345678
+      - POSTGRES_DB=database_name_5
+    ports:
+      - '5432:5432'
+
+  rest:
+    container_name: rest_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8081:8081'
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://psql-db:5432/database_name_5
+      - SPRING_DATASOURCE_USERNAME=hmmrfll
+      - SPRING_DATASOURCE_PASSWORD=12345678
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    depends_on:
+      - psql-db
