@@ -1,5 +1,5 @@
-# Spring Boot 3.2.2 Security with JWT Implementation
-This project demonstrates the implementation of security using Spring Boot 3.2.2 and JSON Web Tokens (JWT). It includes the following features:
+# Spring Boot 3.2.3 Security with JWT Implementation
+This project demonstrates the implementation of security using Spring Boot 3.2.3 and JSON Web Tokens (JWT). It includes the following features:
 
 ## Features
 * User registration and login with JWT authentication
@@ -8,6 +8,7 @@ This project demonstrates the implementation of security using Spring Boot 3.2.2
 * Customized access denied handling
 * Logout mechanism
 * Refresh token
+* Docker compose
 
 ## Technologies
 * Spring Boot 3.0
@@ -15,6 +16,7 @@ This project demonstrates the implementation of security using Spring Boot 3.2.2
 * JSON Web Tokens (JWT)
 * BCrypt
 * Maven
+* Docker
  
 ## Getting Started
 To get started with this project, you will need to have the following installed on your local machine:
@@ -25,7 +27,7 @@ To get started with this project, you will need to have the following installed 
 
 To build and run the project, follow these steps:
 
-* Clone the repository: `gh repo clone hmmrfll/security`
+* Clone the repository: `gh repo clone hmmrfll/rest`
 * Navigate to the project directory: cd spring-boot-security-jwt
 * Add database "jwt_security" to postgres 
 * Build the project: mvn clean install
